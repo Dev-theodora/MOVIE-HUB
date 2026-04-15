@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+    
+    <nav>
+  <a class="logo" href="#"><span>MOVIE</span>HUB</a>
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="search" id="searchbar" placeholder="Search movies..." />
+  </div>
+</nav>
+
+<div class="controls">
+  <div class="tabs">
+    <button class="tab-btn active" data-url="popular">Popular</button>
+    <button class="tab-btn" data-url="now_playing">Now Playing</button>
+    <button class="tab-btn" data-url="upcoming">Upcoming</button>
+    <button class="tab-btn" data-url="top_rated">Top Rated</button>
+  </div>
+  <div class="right-controls">
+    <select id="genre-select">
+      <option value="">All Genres</option>
+    </select>
+    <select id="sort-select">
+      <option value="popularity.desc">Most Popular</option>
+      <option value="vote_average.desc">Highest Rated</option>
+      <option value="release_date.desc">Newest First</option>
+      <option value="release_date.asc">Oldest First</option>
+    </select>
+  </div>
+</div>
+
+<p class="section-title" id="section-label"><span>Popular</span> Movies</p>
+<div id="section"></div>
+    <script src="script.js"></script>
+</body>
+</html>
